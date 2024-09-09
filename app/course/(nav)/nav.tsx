@@ -19,11 +19,11 @@ export default function Nav() {
 
         <>
             <nav id="nav"
-                className={` bg-black z-50 absolute sm:relative min-h-screen sm: flex flex-col bg-navbackground ${navopen? "flex":""} `}
+                className={` flex-shrink-0 bg-black z-50 absolute sm:relative min-h-screen sm: flex flex-col bg-navbackground ${navopen? "flex":""} `}
             >
 
                 <div
-                    className=" flex justify-between  px-5 py-3 "
+                    className=" flex justify-between   px-5 py-3 "
                 >
                     <span className={`${navopen? "block":"hidden"} `}>LOGO</span>
                     <span
@@ -71,7 +71,7 @@ export default function Nav() {
 
                     <div
                         id="logoutrefresh "
-                        className=" flex gap-5 text-red-500 px-2 " >
+                        className="  flex gap-5 text-red-500 px-2 " >
                         <span> <FontAwesomeIcon icon={faRightFromBracket} />
                         </span>   <span className={`${navopen? "block":"hidden"} `}>LOGOUT</span>
                     </div>

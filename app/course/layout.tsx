@@ -20,12 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
 
-        <div className="main flex min-h-screen w-full gap-5 ">
+        <div className="main flex min-h-screen w-full relative  ">
  
           <Nav/>
   
 
-          <div className=" flex-grow-0  bg-slate-600">
+          <div className=" flex-grow  overflow-hidden">
 
               {children}
 
